@@ -14,7 +14,9 @@ Register the component globally in the main.js
 
 ```js
 import DefaultPagination from 'default-pagination-vue';
-Vue.component('default-pagination', DefaultPagination);
+
+const app = createApp(App);
+app.component('default-pagination', DefaultPagination);
 ```
 
 or inside a component
@@ -97,10 +99,10 @@ export default {
         //your code here
         done();
       })
-      .catch(err =>
+      .catch(err => {
         cancelChange();
         alert(err);
-      )
+      });
     }
 ```
 

@@ -1,7 +1,7 @@
 {
   "name": "default-pagination-vue",
   "description": "A pagination component for Vue 3",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "private": false,
   "files": [
     "dist/*",
