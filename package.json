@@ -1,7 +1,7 @@
 {
   "name": "default-pagination-vue",
   "description": "A pagination component for Vue 3",
-  "version": "0.1.0",
+  "version": "0.2.1",
   "private": false,
   "files": [
     "dist/*",
@@ -16,6 +16,13 @@
     "pagination",
     "navigation"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/henriqueArrazao/default-pagination-vue"
+  },
+  "bugs": {
+    "url": "https://github.com/henriqueArrazao/default-pagination-vue/issues"
+  },
   "main": "./dist/default-pagination-vue.common.js",
   "module": "./dist/default-pagination-vue.esm.js",
   "unpkg": "./dist/default-pagination-vue.min.js",
