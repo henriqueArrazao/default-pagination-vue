@@ -1,0 +1,50 @@
+{
+  "name": "default-pagination-vue",
+  "description": "A pagination component for Vue 3",
+  "version": "0.1.0",
+  "private": false,
+  "files": [
+    "dist/*",
+    "src/*",
+    "*.json"
+  ],
+  "keywords": [
+    "vue 3",
+    "vue",
+    "vuejs",
+    "paginate",
+    "pagination",
+    "navigation"
+  ],
+  "main": "./dist/default-pagination-vue.common.js",
+  "module": "./dist/default-pagination-vue.esm.js",
+  "unpkg": "./dist/default-pagination-vue.min.js",
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "unit": "vue-cli-service test:unit",
+    "lint": "vue-cli-service lint",
+    "build-bundle": "vue-cli-service build --target lib --name default-pagination-vue src/index.js",
+    "publish": "npm publish --access public"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.32",
+    "@fortawesome/free-solid-svg-icons": "^5.15.1",
+    "@fortawesome/vue-fontawesome": "^3.0.0-2",
+    "core-js": "^3.6.5",
+    "vue": "^3.0.0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-plugin-unit-jest": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "@vue/compiler-sfc": "^3.0.0",
+    "@vue/test-utils": "^2.0.0-0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^7.0.0-0",
+    "typescript": "^4.0.3",
+    "vue-jest": "^5.0.0-0"
+  }
+}

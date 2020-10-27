@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Commissioner&display=swap');
+
+ul {
+  font-family: 'Commissioner', sans-serif;
+  width: fit-content;
+  padding: 0;
+  display: flex;
+}
+
+li {
+  display: inline-block;
+  padding: 5px 10px;
+  box-shadow: 1px 1px 2px var(--shadow-color-pagination);
+  border-radius: 2px;
+  cursor: pointer;
+  margin: 0px 1px;
+  color: var(--primary-color-pagination);
+  background-color: var(--secondary-color-pagination);
+}
+
+li:hover {
+  box-shadow: 1px 1px 3px var(--shadow-color-pagination);
+  transform: scale(1.1);
+}
+
+.disabled:hover,
+.not-clickable:hover {
+  box-shadow: 1px 1px 2px var(--shadow-color-pagination);
+  transform: scale(1);
+}
+
+.last-icons {
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+.current-page {
+  background-color: var(--primary-color-pagination);
+  transform: scale(1.05);
+  color: var(--secondary-color-pagination);
+}
+
+li:first-child {
+  border-radius: 5px 0 0 5px;
+}
+
+li:last-child {
+  border-radius: 0 5px 5px 0;
+}
+
+.colored-controller {
+  background-color: var(--primary-color-pagination);
+  color: var(--secondary-color-pagination);
+}
+
+.blurred {
+  filter: blur(0.8px);
+}
+
+.disabled {
+  color: var(--disabled-color-pagination);
+}
+
+li >>> path {
+  stroke: var(--secondary-color-pagination);
+  stroke-width: 30px;
+}
+
+.colored-controller >>> path {
+  stroke: var(--primary-color-pagination);
+}
+
+.disable-select {
+  user-select: none; /* supported by Chrome and Opera */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+}
